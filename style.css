@@ -135,7 +135,7 @@ footer {
     
     header {
         align-self: flex-start;
-        margin: 5rem 0 0 8rem;
+        margin: 6rem 0 0 8rem;
     }
     
     .logo {
@@ -151,7 +151,7 @@ footer {
     
     
     .illustration {
-        margin-top: 9rem;
+        margin-top: 8rem;
         max-width: 69.6rem;
     }
     
@@ -160,6 +160,7 @@ footer {
     .content {
         margin-top: 0;
         max-width: 52rem;
+        margin-top: 2rem;
 
     }
     
