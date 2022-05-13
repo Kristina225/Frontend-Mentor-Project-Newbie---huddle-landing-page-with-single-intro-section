@@ -160,6 +160,7 @@ footer {
     .content {
         margin-top: 0;
         max-width: 52rem;
+        transform: translateY(-1rem);
     }
     
     .content__title {
