@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-violet: #674baf;
+    --color-soft-magenta: #e882e8;
+}
+
+/* -------------------------------------- MOBILE VIEW ----------------------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("images/bg-mobile.svg"), var(--color-violet);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* ----------------------------- Mobile: Header Styles -------------------------- */
+
+header {
+    align-self: flex-start;
+}
+
+.logo {
+    max-width: 12rem;
+}
+
+/* ------------------------ Mobile : Main Illustration Styles -------------------- */
+
+.main  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.illustration {
+    margin-top: 5.5rem;
+}
+
+.illustration img {
+    max-width: 29.6rem;
+}
+
+/* ----------------------------------- Mobile: Main Content Styles --------------------- */
+
+.content {
+    max-width: 30.4rem;
+    margin-top: 6rem;
+}
+
+.content__title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.content__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-top: 1.6rem;
+}
+
+.content__btn {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    width: 20rem;
+    height: 4rem;
+    margin-top: 2.4rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    background-color: #fff;
+    color: var(--color-violet);
+}
+
+/* --------------------------------- Mobile: Footer Styles ----------------------------- */
+
+footer {
+    margin-top: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.05rem;
+}
+
+.social-media__link {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ----------------------------------------- DESKTOP STYLES ----------------------------------- */
+
+
+@media only screen and (min-width: 400px) {
+    body {
+        background: url("images/bg-desktop.svg"), var(--color-violet);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    
+    /* ----------------------------- Desktop: Header Styles -------------------------- */
+    
+    header {
+        align-self: flex-start;
+        margin: 6rem 0 0 8rem;
+    }
+    
+    .logo {
+        max-width: 20rem;
+    }
+    
+    /* ------------------------ Desktop : Main Illustration Styles -------------------- */
+    
+    .main  {
+        flex-direction: row;
+        gap: 5.9rem;
+    }
+    
+    
+    .illustration {
+        margin-top: 9rem;
+        max-width: 69.6rem;
+    }
+    
+    /* ----------------------------------- Desktop: Main Content Styles --------------------- */
+    
+    .content {
+        margin-top: 0;
+        max-width: 52rem;
+
+    }
+    
+    .content__title {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    
+    .content__text {
+        margin-top: 2.4rem;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+    
+    .content__btn {
+        margin-top: 2.4rem;
+        width: 20rem;
+        height: 5.6rem;
+        border-radius: 2.8rem;
+        box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+    
+    /* --------------------------------- Desktop: Footer Styles ----------------------------- */
+    
+    footer {
+        align-self: flex-end;
+        margin: 2.4rem 8rem 4rem 0;
+        gap: 1.6rem;
+    }
+    
+    .social-media__link {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1.8px solid #fff;
+    }
+}   
